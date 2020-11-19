@@ -33,7 +33,8 @@ public class Main {
     public static void main(String[] args) throws Exception {
         var foo = new DerivedClass();
     }
-}```
+}
+```
 実行結果
 ```
 SuperClass::Static Initializer
