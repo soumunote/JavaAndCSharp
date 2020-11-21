@@ -86,7 +86,7 @@ public enum JpWeek {
 }
 ```
 <details>
-<summary>Decompile<summary>
+<summary>Decompile</summary>
 ```Java:JpWeek.java
 public final class JpWeek extends Enum
 {
