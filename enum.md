@@ -85,7 +85,8 @@ public enum JpWeek {
   public String getJpName() { return this.jpName; }
 }
 ```
-#### Decompile
+<details>
+<summary>Decompile<summary>
 ```Java:JpWeek.java
 public final class JpWeek extends Enum
 {
@@ -136,6 +137,6 @@ public final class JpWeek extends Enum
     }
 }
 ```
-
+</details>
 # C#
 
