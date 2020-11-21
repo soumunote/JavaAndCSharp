@@ -1,6 +1,6 @@
 # Java
 - [クラス名#valueOf("値名")](https://github.com/openjdk/jdk/blob/9a19eb6918e1f766ccf1b1671ea1161a76fee571/src/java.base/share/classes/java/lang/Enum.java#L265) から値インスタンスを取得できる
-- [クラス名#toString()](https://github.com/openjdk/jdk/blob/9a19eb6918e1f766ccf1b1671ea1161a76fee571/src/java.base/share/classes/java/lang/Enum.java#L150)  
+- [クラス名#toString()](https://github.com/openjdk/jdk/blob/9a19eb6918e1f766ccf1b1671ea1161a76fee571/src/java.base/share/classes/java/lang/Enum.java#L150) から値の文字列表現を得ることができる。(文字列表現はenum->classへコンパイルされる際に生成される)
 - クラス名#values() にて値の配列を得ることができる
 - クラス名#ordinal() にて定義順を得ることができると同時に、 [クラス名#compareT()](https://github.com/openjdk/jdk/blob/9a19eb6918e1f766ccf1b1671ea1161a76fee571/src/java.base/share/classes/java/lang/Enum.java#L195) による比較も可能
 
