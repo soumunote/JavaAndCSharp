@@ -11,7 +11,9 @@ enumは最終的にclassとしてコンパイルされるが、詳細を確認�
 - [JAD Java Decompiler](https://varaneckas.com/jad/)  
   *こちらを使用* 
 ### 簡単な定義
-#### Source
+<details>
+<summary>Source</summary>
+
 ```Java:Week.java
 public enum Week {
   SUNDAY,
@@ -23,7 +25,11 @@ public enum Week {
   SATURDAY, // カンマで終われるのが良いね。
 }
 ```
-#### Decompile
+
+</details>
+<details>
+<summary>Decompile</summary>
+
 ```Java:Week.java
 public final class Week extends Enum
 {
@@ -67,8 +73,13 @@ public final class Week extends Enum
     }
 }
 ```
+
+</details>
+
 ### コンストラクタを再定義し追加情報を付与
-#### Source
+<details>
+<summary>Source</summary>
+
 ```Java:JpWeek.java
 public enum JpWeek {
   SUNDAY("日"),
@@ -85,6 +96,8 @@ public enum JpWeek {
   public String getJpName() { return this.jpName; }
 }
 ```
+
+</details>
 <details>
 <summary>Decompile</summary>
   
