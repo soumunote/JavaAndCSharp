@@ -1,5 +1,8 @@
 # Java
-enum から内部的に classへコンパイルされる際に、定数名に応じた定数名も生成され、Enum<E extends Enum<E>>のコンストラクたる。
+enum から内部的に classへコンパイルされる際に、定数名に応じた定数名も生成される。  
+1. staticイニシャライザブロックで各定数のインスタンスが生成される
+2. 各定数の初期化時に、Enum<E extends Enum<E>>のコンストラクタに name(定数の文字列表現), ordinal が渡される  
+   (name, ordinal はコンパイラが自動生成)
 - [クラス名#valueOf("値の文字列表現")](https://github.com/openjdk/jdk/blob/9a19eb6918e1f766ccf1b1671ea1161a76fee571/src/java.base/share/classes/java/lang/Enum.java#L265) から値インスタンスを取得できる
 - [クラス名#toString()](https://github.com/openjdk/jdk/blob/9a19eb6918e1f766ccf1b1671ea1161a76fee571/src/java.base/share/classes/java/lang/Enum.java#L150) から値の文字列表現を得ることができる
 - クラス名#values() にて値の配列を得ることができる
