@@ -178,9 +178,6 @@ public final class JpWeek extends Enum
 
 ### サンプル
 #### 値<=>文字列の相互変換
-<details>
-<summary>ソース</summary>
-
 ```C#
 using System;
 
@@ -208,7 +205,6 @@ class Program
     }
 }
 ```
-</details>
 <details>
 <summary>実行結果</summary>
 
@@ -268,9 +264,6 @@ Unhandled exception. System.ArgumentException: Requested value 'ONE DAY' was not
 </details>
 
 #### 値の一覧
-<details>
-<summary>ソース</summary>
-
 ```c#
 using System;
 
@@ -304,8 +297,6 @@ class Program
     }
 }
 ```
-</details>
-
 <details>
 <summary>実行結果</summary>
    
@@ -430,9 +421,6 @@ SUNDAY
 </details>
 
 #### 拡張メソッド
-<details>
-<summary>ソース</summary>
-
 ```c#
 using System;
 
@@ -466,10 +454,8 @@ static class Program
     }
 }
 ```
-</details>
-
 <details>
-<summary></summary>
+<summary>実行結果</summary>
 
 ```
 MONDAY is weekday
