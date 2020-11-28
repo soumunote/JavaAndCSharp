@@ -1,7 +1,7 @@
 # Enum
 enumに関しては、内部的な実装がかなり異なる
 |  |java|C#|
-+--+----+--+
+|--|----|--|
 | enumキーワードで定義した型は、| `Enum<E extends Enum<E>>の派生クラスになる` | Enumクラスの派生クラスになる |
 | 列挙される各値は | 列挙型のインスタンスである(プリミティブ型ではない) | 整数値型の値である。列挙型自体も値型 |
 | ベースクラスの実装は | [かなりシンプル](https://github.com/AdoptOpenJDK/openjdk-jdk11/blob/master/src/java.base/share/classes/java/lang/Enum.java) 
@@ -179,7 +179,7 @@ public final class JpWeek extends Enum
 
 ### サンプル
 #### 値<=>文字列の相互変換
-<detail>
+<details>
 <summary>ソース</summary>
 
 ```C#
@@ -209,7 +209,7 @@ class Program
     }
 }
 ```
-</detail>
+</details>
 <details>
 <summary>実行結果</summary>
 
@@ -307,7 +307,7 @@ class Program
 ```
 </details>
 
-<detail>
+<details>
 <summary>実行結果</summary>
    
 ```
@@ -333,29 +333,21 @@ FRIDAY
 SATURDAY
 SUNDAY
 ```
-</detail>
+</details>
 
-<detail>
+<details>
 <summary>IL</summary>
    
 ```IL
 .class private auto ansi sealed Week extends [System.Runtime]System.Enum
 {
-
   .field public specialname rtspecialname uint16 value__
-
   .field public static Week MONDAY
-
   .field public static Week TUESDAY
-
   .field public static Week WEDNESDAY
-
   .field public static Week THURSDAY
-
   .field public static Week FRIDAY
-
   .field public static Week SATURDAY
-
   .field public static Week SUNDAY
 } // End of class Week
 
@@ -436,7 +428,7 @@ SUNDAY
     IL_00a5: ret
   } // End of method System.Void Program::Main(System.String[])
 ```
-</detail>
+</details>
 
 #### 拡張メソッド
 <details>
