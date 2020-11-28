@@ -4,8 +4,7 @@ enumに関しては、内部的な実装がかなり異なる
 |--|----|--|
 | enumキーワードで定義した型は、| `Enum<E extends Enum<E>>の派生クラスになる` | Enumクラスの派生クラスになる |
 | 列挙される各値は | 列挙型のインスタンスである(プリミティブ型ではない) | 整数値型の値である。列挙型自体も値型 |
-| ベースクラスの実装は | [かなりシンプル](https://github.com/AdoptOpenJDK/openjdk-jdk11/blob/master/src/java.base/share/classes/java/lang/Enum.java) 
-                   | [かなり複雑](https://github.com/AdoptOpenJDK/openjdk-jdk11/blob/master/src/java.base/share/classes/java/lang/Enum.java) |
+| ベースクラスの実装は | [かなりシンプル](https://github.com/AdoptOpenJDK/openjdk-jdk11/blob/master/src/java.base/share/classes/java/lang/Enum.java) | [かなり複雑](https://github.com/AdoptOpenJDK/openjdk-jdk11/blob/master/src/java.base/share/classes/java/lang/Enum.java) |
 | 列挙型自体に機能を追加したい場合 | メソッドを定義できる | 拡張メソッドを定義する |
 
 ## Java
