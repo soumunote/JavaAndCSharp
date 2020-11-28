@@ -438,7 +438,55 @@ SUNDAY
 ```
 </detail>
 
-1. staticイニシャライザブロックで各定数のインスタンスが生成される`
-1. staticイニシャライザブロックで各定数のインスタンスが生成される`
-1. staticイニシャライザブロックで各定数のインスタンスが生成される`
-1. staticイニシャライザブロックで各定数のインスタンスが生成される
+#### 拡張メソッド
+<details>
+<summary>ソース</summary>
+
+```c#
+using System;
+
+enum Week : ushort
+{
+    MONDAY = 0,
+    TUESDAY = 1,
+    WEDNESDAY = 2,
+    THURSDAY = 3,
+    FRIDAY = 4,
+    SATURDAY = 5,
+    SUNDAY = 6,
+}
+
+static class Program
+{
+    public static string WeekType(this Week week)
+    {
+        return week switch {
+            Week w when w == Week.SATURDAY || w == Week.SUNDAY => "weekend",
+            _ => "weekday",
+        };
+    }
+    
+    static void Main(string[] args)
+    {
+        foreach (Week value in Enum.GetValues(typeof(Week)))
+        {
+            Console.WriteLine($"{value.ToString()} is {value.WeekType()}");
+        }
+    }
+}
+```
+</details>
+
+<details>
+<summary></summary>
+
+```
+MONDAY is weekday
+TUESDAY is weekday
+WEDNESDAY is weekday
+THURSDAY is weekday
+FRIDAY is weekday
+SATURDAY is weekend
+SUNDAY is weekend
+```
+</details>
