@@ -6,10 +6,10 @@ SE11版の参考書は現時点で出版されていないので、過去に積�
 悪い癖で、単なる試験対策勉強は嫌なので、対応するC#の文法がどうなっているかを含めて学習し、その記録を残す。  
 次のLTSリリースまでに勉強が終わるだろうか？  
 
-# 目次
-## Silver
-## Gold 
-### Javaクラスの設計
+## 目次
+### Silver
+### Gold 
+#### Javaクラスの設計
 - [switch文](gold/chap01/switch.md)
 - [イニシャライザブロック](gold/chap01/initializer-block.md)
 - [ネストされたクラス](gold/chap01/nested-class.md)
