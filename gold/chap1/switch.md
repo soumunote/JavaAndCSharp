@@ -1,4 +1,4 @@
-# Switch Statement
+# Switch
 ## Java
 - 式に許される型  
   char, byte, short, int, Character, Byte, Short, Integer, String, *enum type*
