@@ -14,3 +14,4 @@ SE11版の参考書は現時点で出版されていないので、過去に積�
 - [イニシャライザブロック](gold/chap01/initializer-block.md)
 - [ネストされたクラス](gold/chap01/nested-class.md)
 - [列挙型](gold/chap01/enum.md)
+- [staticインポート](gold/chap01/static-imort.md)
