@@ -7,7 +7,9 @@ SE11版の参考書は現時点で出版されていないので、過去に積�
 次のLTSリリースまでに勉強が終わるだろうか？  
 
 ## 目次
+
 ### Silver
+
 ### Gold 
 #### 第1章 Javaクラスの設計
 - [switch文](gold/chap01/switch.md)
@@ -15,5 +17,8 @@ SE11版の参考書は現時点で出版されていないので、過去に積�
 - [ネストされたクラス](gold/chap01/nested-class.md)
 - [列挙型](gold/chap01/enum.md)
 - [staticインポート](gold/chap01/static-imort.md)
-### 第2章 高度なJavaクラスの設計
+#### 第2章 高度なJavaクラスの設計
 - [オーバーライドと隠蔽](gold/chap02/override_hide.md)
+
+### 番外
+- [BOX化](extra/boxing.md)
